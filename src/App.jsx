@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
+import TypingEffect from './components/TypingEffect';
 import './App.css';
 
 function App() {
@@ -7,32 +8,34 @@ function App() {
 
     return (
         <>
-            {/* Include the Header component */}
             <Header />
+            <div>
+                <TypingEffect />
+            </div>
 
-                <section id="home">
-                    {/* Home content */}
-                    <h2>Home</h2>
-                    <p>Welcome to my portfolio's home section.</p>
-                </section>
+            <section id="home">
+                {/* Home content */}
+                <h2>Home</h2>
+                <p>Welcome to my portfolio's home section.</p>
+            </section>
 
-                <section id="about">
-                    {/* About content */}
-                    <h2>About</h2>
-                    <p>I'm a passionate developer with a love for web development and programming languages.</p>
-                </section>
+            <section id="about">
+                {/* About content */}
+                <h2>About</h2>
+                <p>I'm a passionate developer with a love for web development and programming languages.</p>
+            </section>
 
-                <section id="portfolio">
-                    {/* Portfolio content */}
-                    <h2>Portfolio</h2>
-                    {/* Portfolio items go here */}
-                </section>
+            <section id="portfolio">
+                {/* Portfolio content */}
+                <h2>Portfolio</h2>
+                {/* Portfolio items go here */}
+            </section>
 
-                <section id="contact">
-                    {/* Contact content */}
-                    <h2>Contact</h2>
-                    <p>Feel free to contact me.</p>
-                </section>
+            <section id="contact">
+                {/* Contact content */}
+                <h2>Contact</h2>
+                <p>Feel free to contact me.</p>
+            </section>
             <main className="container">
             </main>
 
