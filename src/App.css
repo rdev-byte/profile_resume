@@ -22,6 +22,9 @@ body {
   justify-content: space-between; /* or use 'space-around' for spacing around items */
 }
 
+.left-align-text {
+  text-align: left;
+}
 
 .lead {
   font-size: 1.5rem;

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header() {
     return (
-        <header className="jumbotron bg-dark text-white">
+        <header className="jumbotron">
             <div className="container">
                 <nav>
                     <ul className="nav justify-content-between">

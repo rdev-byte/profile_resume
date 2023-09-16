@@ -16,7 +16,7 @@ function TypingEffect() {
                         'Problem Solver',
                         'Continuous Learner',
                     ]}
-                    typeSpeed={50}
+                    typeSpeed={40}
                     backSpeed={25}
                     backDelay={1000}
                     loop
