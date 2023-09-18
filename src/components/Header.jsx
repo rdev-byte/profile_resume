@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
-import { Link } from 'react-scroll';
 
 function Header() {
     const [showModal, setShowModal] = useState(false);
@@ -8,50 +7,19 @@ function Header() {
     const handleClose = () => setShowModal(false);
     const handleShow = () => setShowModal(true);
 
-    const scrollToSection = (sectionId) => {
-        const element = document.getElementById(sectionId);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
     return (
         <header className="jumbotron">
             <div className="container">
                 <nav>
                     <ul className="nav justify-content-between">
                         <li className="nav-item">
-                            <Link
-                                to="home"
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                                onClick={() => scrollToSection('home')}
-                            >
-                                Home
-                            </Link>
+                            <a href="#home">Home</a>
                         </li>
                         <li className="nav-item">
-                            <Link
-                                to="about"
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                                onClick={() => scrollToSection('about')}
-                            >
-                                About Me
-                            </Link>
+                            <a href="#about">About Me</a>
                         </li>
                         <li className="nav-item">
-                            <Link
-                                to="portfolio"
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                                onClick={() => scrollToSection('portfolio')}
-                            >
-                                Projects
-                            </Link>
+                            <a href="#portfolio">Projects</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#" onClick={handleShow}>
